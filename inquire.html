@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send an Inquiry - WIZ WINNER</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="top-bar-container">
+      <span>📍 Banaba South, Batangas City, Philippines</span>
+      <span>📞 (043) 233-2830 &nbsp;|&nbsp; 0998-858-4358</span>
+      <span>✉️ wiz.win04_inc@yahoo.com</span>
+    </div>
+  </div>
+
+  <!-- MAIN HEADER NAVBAR -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html" class="logo-link">
+          <img src="wwcsi-logo.png" alt="WWCSI Logo" class="logo-img">
+          <div class="logo-text">
+            <span class="brand-title">WIZ WINNER</span>
+            <span class="brand-sub">CONSTRUCTION SERVICES, INC.</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">HOME</a>
+        <a href="index.html#about">ABOUT US</a>
+        <a href="index.html#services">SERVICES</a>
+        <a href="index.html#projects">PROJECTS</a>
+        <a href="equipment.html">EQUIPMENT</a>
+        <a href="index.html#team">OUR TEAM</a>
+        <a href="inquire.html" class="btn-inquire-nav">INQUIRE NOW</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO BANNER WITH GOLD BORDER -->
+  <section class="inquiry-hero">
+    <div class="inquiry-hero-container">
+      <h1>SEND AN INQUIRY</h1>
+      <p>Tell us about your project — our team responds within one business day.</p>
+    </div>
+  </section>
+
+  <!-- MAIN SECTION (FORM + SIDEBAR) -->
+<main class="inquiry-main">
+  <div class="inquiry-container">
+    
+    <!-- LEFT FORM CARD -->
+    <div class="inquiry-form-card">
+      <!-- WEB3FORMS INTEGRATION -->
+      <form action="https://api.web3forms.com/submit" method="POST">
+        
+        <!-- YOUR NEW ACCESS KEY & SUBJECT -->
+        <input type="hidden" name="access_key" value="9ecb01ab-4ffb-4f0e-abde-69b66c283336">
+        <input type="hidden" name="subject" value="New Website Inquiry - WWCSI">
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label>FULL NAME <span class="required">*</span></label>
+            <input type="text" name="name" placeholder="Juan Dela Cruz" required>
+          </div>
+          <div class="form-group">
+            <label>COMPANY</label>
+            <input type="text" name="company" placeholder="Company / Organization">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>EMAIL ADDRESS <span class="required">*</span></label>
+            <input type="email" name="email" placeholder="Your Email Address" required>
+          </div>
+          <div class="form-group">
+            <label>CONTACT NUMBER <span class="required">*</span></label>
+            <input type="tel" name="contact_number" placeholder="09XX XXX XXXX" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>SERVICE NEEDED <span class="required">*</span></label>
+            <select name="service_needed" required>
+              <option value="" disabled selected>— Select a service —</option>
+              <option value="Electrical / Instrumentation">Electrical / Instrumentation</option>
+              <option value="Mechanical Works">Mechanical Works</option>
+              <option value="Piping Works Installation">Piping Works Installation</option>
+              <option value="Civil & Structural Works">Civil & Structural Works</option>
+              <option value="Wastewater Treatment">Wastewater Treatment</option>
+              <option value="Management & Manpower">Management & Manpower</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>PROJECT LOCATION</label>
+            <input type="text" name="project_location" placeholder="City / Province">
+          </div>
+        </div>
+
+        <div class="form-group" style="margin-top: 15px;">
+          <label>PROJECT DETAILS / MESSAGE <span class="required">*</span></label>
+          <textarea name="message" placeholder="Please enter project details or requirements..." required style="width: 100%; min-height: 120px; padding: 10px; border-radius: 6px; border: 1px solid #ccc;"></textarea>
+        </div>
+
+        <div style="margin-top: 20px;">
+          <button type="submit" style="background-color: #7A1228; color: #fff; padding: 12px 24px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer;">SUBMIT INQUIRY</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</main>
+          <div class="form-group">
+            <label>ESTIMATED BUDGET RANGE</label>
+            <select name="Budget Range">
+              <option value="Not Specified" selected>— Optional —</option>
+              <option value="Below P100,000">Below ₱100,000</option>
+              <option value="P100,000 - P500,000">₱100,000 - ₱500,000</option>
+              <option value="P500,000 - P1,000,000">₱500,000 - ₱1,000,000</option>
+              <option value="Above P1,000,000">Above ₱1,000,000</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>PROJECT DETAILS <span class="required">*</span></label>
+            <textarea name="Project Details" rows="5" placeholder="Describe the scope of work, target schedule and any special requirements." required></textarea>
+          </div>
+
+          <div class="form-checkbox">
+            <input type="checkbox" id="consent" name="Consent Agreed" value="Yes" required>
+            <label for="consent">I agree that WWCSI may contact me regarding this inquiry.</label>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-submit">Submit Inquiry</button>
+            <button type="reset" class="btn-clear">Clear Form</button>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- RIGHT SIDEBAR -->
+      <div class="inquiry-sidebar">
+        
+        <div class="info-box">
+          <h3>MAIN OFFICE</h3>
+          <p>Banaba South, Batangas City</p>
+          <p>Tel. No. (043) 233-2830</p>
+        </div>
+
+        <div class="info-box">
+          <h3>SATELLITE OFFICE</h3>
+          <p>Block 14 Lot 3, Sampaguita St.,</p>
+          <p>Villa Adelina II, Pulo, Cabuyao City, Laguna</p>
+          <p>Tel. No. (049) 304-9513</p>
+          <p>Mobile: 0998-858-4358</p>
+        </div>
+
+        <div class="info-box">
+          <h3>EMAIL</h3>
+          <p><a href="mailto:wiz.win04_inc@yahoo.com">wiz.win04_inc@yahoo.com</a></p>
+          <p><a href="mailto:bong_macalalad@yahoo.com.ph">bong_macalalad@yahoo.com.ph</a></p>
+        </div>
+
+        <div class="info-box">
+          <h3>OFFICE HOURS</h3>
+          <p>Monday – Friday: 8:00 AM – 5:00 PM</p>
+          <p>Saturday: 8:00 AM – 12:00 NN</p>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
