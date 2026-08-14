@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send an Inquiry - Wiz Winner Construction Services Inc.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- TOP BAR (MAROON CONTACT BAR) -->
+  <div class="top-bar">
+    <div class="top-bar-container">
+      <span>📍 Banaba South, Batangas City, Philippines</span>
+      <span>📞 (043) 233-2830 | 0998-858-4358</span>
+      <span>✉️ wiz.win04_inc@yahoo.com</span>
+    </div>
+  </div>
+
+  <!-- MAIN HEADER & NAVIGATION -->
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo-container">
+        <a href="index.html" class="brand-link">
+          <img src="wwcsi-logo.png" alt="WWCSI Logo" class="logo-img">
+          <div class="brand-text">
+            <span class="brand-title">WIZ WINNER</span>
+            <span class="brand-subtitle">CONSTRUCTION SERVICES, INC.</span>
+          </div>
+        </a>
+      </div>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="index.html#about">ABOUT US</a></li>
+          <li><a href="index.html#services">SERVICES</a></li>
+          <li><a href="index.html#projects">PROJECTS</a></li>
+          <li><a href="index.html#equipment">EQUIPMENT</a></li>
+          <li><a href="index.html#team">OUR TEAM</a></li>
+          <li><a href="inquire.html" class="btn-nav-inquire">INQUIRE NOW</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BANNER SECTION -->
+  <section class="banner-section">
+    <div class="banner-container">
+      <h1>SEND AN INQUIRY</h1>
+      <p>Tell us about your project — our team responds within one business day.</p>
+    </div>
+  </section>
+
+  <!-- MAIN SECTION: FORM & SIDEBAR CARDS -->
+  <main class="inquiry-main-wrapper">
+    
+    <!-- LEFT: FORM CARD -->
+    <div class="inquiry-form-section">
+      <form action="https://api.web3forms.com/submit" method="POST" id="inquiryForm">
+        
+        <!-- Web3Forms Access Key -->
+        <input type="hidden" name="access_key" value="9ecb01ab-4ffb-4f0e-abde-69b66c283336">
+        
+        <!-- Subject ng Email na Matatanggap Mo -->
+        <input type="hidden" name="subject" value="New Inquiry - WWCSI Website">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fullName">FULL NAME *</label>
+            <input type="text" name="Full Name" id="fullName" placeholder="Juan Dela Cruz" required>
+          </div>
+          <div class="form-group">
+            <label for="company">COMPANY</label>
+            <input type="text" name="Company" id="company" placeholder="Company / Organization">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">EMAIL ADDRESS *</label>
+            <input type="email" name="Email" id="email" placeholder="you@company.com" required>
+          </div>
+          <div class="form-group">
+            <label for="contactNumber">CONTACT NUMBER *</label>
+            <input type="tel" name="Contact Number" id="contactNumber" placeholder="09XX XXX XXXX" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="service">SERVICE NEEDED *</label>
+            <select name="Service Needed" id="service" required>
+              <option value="">— Select a service —</option>
+              <option value="Electrical / Instrumentation">Electrical / Instrumentation</option>
+              <option value="Mechanical & Piping">Mechanical & Piping</option>
+              <option value="Civil & Structural">Civil & Structural</option>
+              <option value="Wastewater Treatment">Wastewater Treatment</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="location">PROJECT LOCATION</label>
+            <input type="text" name="Project Location" id="location" placeholder="City / Province">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="budget">ESTIMATED BUDGET RANGE</label>
+          <select name="Estimated Budget Range" id="budget">
+            <option value="">— Optional —</option>
+            <option value="Below ₱1,000,000">Below ₱1,000,000</option>
+            <option value="₱1,000,000 - ₱5,000,000">₱1,000,000 - ₱5,000,000</option>
+            <option value="Above ₱5,000,000">Above ₱5,000,000</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="details">PROJECT DETAILS *</label>
+          <textarea name="Project Details" id="details" rows="5" placeholder="Describe the scope of work, target schedule and any special requirements." required></textarea>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" name="Consent" value="Agreed" id="consent" required>
+          <label for="consent">I agree that WWCSI may contact me regarding this inquiry.</label>
+        </div>
+
+        <div class="button-group">
+          <button type="submit" class="btn-submit">Submit Inquiry</button>
+          <button type="reset" class="btn-clear">Clear Form</button>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- RIGHT: SIDEBAR CARDS -->
+    <aside class="inquiry-sidebar-section">
+      
+      <div class="info-card">
+        <h3>MAIN OFFICE</h3>
+        <p>Banaba South, Batangas City</p>
+        <p>Tel. No. (043) 233-2830</p>
+      </div>
+
+      <div class="info-card">
+        <h3>SATELLITE OFFICE</h3>
+        <p>Block 14 Lot 3, Sampaguita St.,</p>
+        <p>Villa Adelina II, Pulo, Cabuyao City, Laguna</p>
+        <p>Tel. No. (049) 304-9513</p>
+        <p>Mobile: 0998-858-4358</p>
+      </div>
+
+      <div class="info-card">
+        <h3>EMAIL</h3>
+        <p><a href="mailto:wiz.win04_inc@yahoo.com">wiz.win04_inc@yahoo.com</a></p>
+        <p><a href="mailto:bong_macalalad@yahoo.com.ph">bong_macalalad@yahoo.com.ph</a></p>
+      </div>
+
+      <div class="info-card">
+        <h3>OFFICE HOURS</h3>
+        <p>Monday – Friday: 8:00 AM – 5:00 PM</p>
+        <p>Saturday: 8:00 AM – 12:00 NN</p>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <!-- DETAILED DARK FOOTER -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      
+      <!-- COLUMN 1: LOGO & DESCRIPTION -->
+      <div class="footer-col brand-col">
+        <div class="footer-logo">
+          <a href="index.html" class="brand-link">
+            <img src="wwcsi-logo.png" alt="WWCSI Logo" class="footer-logo-img">
+            <div class="brand-text">
+              <span class="brand-title-footer">WIZ WINNER</span>
+              <span class="brand-subtitle-footer">CONSTRUCTION SERVICES, INC.</span>
+            </div>
+          </a>
+        </div>
+        <p class="brand-desc">A construction company dealing with engineering design, installation, pre-commissioning, start-up operation and maintenance since 2004.</p>
+      </div>
+
+      <!-- COLUMN 2: COMPANY LINKS -->
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#team">Our Team</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+        </ul>
+      </div>
+
+      <!-- COLUMN 3: SERVICES LINKS -->
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#services">Electrical / Instrumentation</a></li>
+          <li><a href="index.html#services">Mechanical & Piping</a></li>
+          <li><a href="index.html#services">Civil & Structural</a></li>
+          <li><a href="index.html#services">Wastewater Treatment</a></li>
+        </ul>
+      </div>
+
+      <!-- COLUMN 4: CONTACT INFO & BUTTON -->
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Banaba South, Batangas City</p>
+        <p>(043) 233-2830 · 0998-858-4358</p>
+        <p><a href="mailto:wiz.win04_inc@yahoo.com" class="contact-email">wiz.win04_inc@yahoo.com</a></p>
+        <a href="inquire.html" class="btn-footer-inquire">Inquire Now</a>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM COPYRIGHT BAR -->
+    <div class="footer-bottom">
+      <p>© Wiz Winner Construction Services, Inc. All rights reserved. Batangas City · Cabuyao, Laguna · Philippines</p>
+    </div>
+  </footer>
+
+</body>
+</html>
